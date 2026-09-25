@@ -8,7 +8,7 @@ require (
 	github.com/fil-forge/ucantone v0.0.0-20260706102443-79141c5cc52e
 	github.com/ipfs/go-cid v0.6.2
 	github.com/multiformats/go-multicodec v0.10.0
-	github.com/olekukonko/tablewriter v1.1.4
+	github.com/olekukonko/tablewriter v1.1.5
 	github.com/spf13/cobra v1.10.2
 	github.com/stretchr/testify v1.12.1
 	github.com/whyrusleeping/cbor-gen v0.3.1

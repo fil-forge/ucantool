@@ -1,7 +1,7 @@
 name: Release Checker
 
 on:
-  pull_request_target:
+  pull_request:
     paths: [ 'version.json' ]
     types: [ opened, synchronize, reopened, labeled, unlabeled ]
   workflow_dispatch:
@@ -16,4 +16,4 @@ concurrency:
 
 jobs:
   release-check:
-    uses: ipdxco/unified-github-workflows/.github/workflows/release-check.yml@1822b44541e3ad073b8f9109e346ba0ddd4ce96e # v1.0
+    uses: ipdxco/unified-github-workflows/.github/workflows/release-check.yml@d9b156f4be9fae6843707f5e5cda2fb079f821ac # v1.0

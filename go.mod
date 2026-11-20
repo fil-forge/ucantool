@@ -1,18 +1,18 @@
 module github.com/fil-forge/ucantool
 
-go 1.25.0
+go 1.26.0
 
 require (
-	github.com/alanshaw/dag-json-gen v0.0.9
+	github.com/alanshaw/dag-json-gen v0.0.11
 	github.com/alecthomas/chroma/v2 v2.27.0
 	github.com/fil-forge/ucantone v0.0.0-20260706102443-79141c5cc52e
 	github.com/ipfs/go-cid v0.6.2
 	github.com/multiformats/go-multicodec v0.10.0
-	github.com/olekukonko/tablewriter v1.1.4
+	github.com/olekukonko/tablewriter v1.1.5
 	github.com/spf13/cobra v1.10.2
 	github.com/stretchr/testify v1.12.1
 	github.com/whyrusleeping/cbor-gen v0.3.1
-	golang.org/x/term v0.45.0
+	golang.org/x/term v0.48.0
 )
 
 require (
@@ -43,7 +43,7 @@ require (
 	gitlab.com/yawning/tuplehash v0.0.0-20230713102510-df83abbf9a02 // indirect
 	go.yaml.in/yaml/v3 v3.0.5 // indirect
 	golang.org/x/crypto v0.53.0 // indirect
-	golang.org/x/sys v0.47.0 // indirect
+	golang.org/x/sys v0.50.0 // indirect
 	golang.org/x/xerrors v0.0.0-20240903120638-7835f813f4da // indirect
 	lukechampine.com/blake3 v1.4.1 // indirect
 	pitr.ca/jsontokenizer v0.3.2 // indirect

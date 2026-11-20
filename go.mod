@@ -1,11 +1,11 @@
 module github.com/fil-forge/ucantool
 
-go 1.26.0
+go 1.27.0
 
 require (
 	github.com/alanshaw/dag-json-gen v0.0.11
 	github.com/alecthomas/chroma/v2 v2.27.0
-	github.com/fil-forge/ucantone v0.0.0-20260706102443-79141c5cc52e
+	github.com/fil-forge/ucantone v0.0.0-20261120104359-4253712d41e4
 	github.com/ipfs/go-cid v0.6.2
 	github.com/multiformats/go-multicodec v0.10.0
 	github.com/olekukonko/tablewriter v1.1.5
@@ -21,7 +21,7 @@ require (
 	github.com/clipperhouse/uax29/v2 v2.6.0 // indirect
 	github.com/dlclark/regexp2/v2 v2.2.1 // indirect
 	github.com/fatih/color v1.18.0 // indirect
-	github.com/gobwas/glob v0.2.3 // indirect
+	github.com/gobwas/glob v1.1.0 // indirect
 	github.com/inconshreveable/mousetrap v1.1.0 // indirect
 	github.com/klauspost/cpuid/v2 v2.3.0 // indirect
 	github.com/mattn/go-colorable v0.1.14 // indirect

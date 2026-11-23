@@ -7,6 +7,7 @@ import (
 	"time"
 
 	"github.com/fil-forge/ucantone/did"
+	"github.com/fil-forge/ucantone/did/web"
 	"github.com/fil-forge/ucantone/multikey"
 	"github.com/fil-forge/ucantone/ucan"
 	"github.com/fil-forge/ucantone/ucan/command"
@@ -227,12 +228,9 @@ func newIssuer(req Request) (multikey.Issuer, error) {
 		return multikey.KeyIssuer(req.Signer), nil
 	}
 
-	issuerDID, err := did.Parse(req.IssuerDIDWeb)
+	issuerDID, err := web.Parse(req.IssuerDIDWeb)
 	if err != nil {
 		return nil, fmt.Errorf("parsing issuer DID: %w", err)
-	}
-	if issuerDID.Method() != "web" {
-		return nil, fmt.Errorf("issuer DID must start with 'did:web:'")
 	}
 
 	return multikey.NewIssuer(issuerDID, req.Signer), nil

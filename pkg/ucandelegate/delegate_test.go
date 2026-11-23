@@ -170,7 +170,11 @@ func TestDelegateInvalidRequests(t *testing.T) {
 		},
 		"issuer DID is not did:web": {
 			mutate:         func(req *ucandelegate.Request) { req.IssuerDIDWeb = "did:key:z6Mk" },
-			expectedErrMsg: "issuer DID must start with 'did:web:'",
+			expectedErrMsg: "expected web",
+		},
+		"issuer did:web has a malformed port": {
+			mutate:         func(req *ucandelegate.Request) { req.IssuerDIDWeb = "did:web:example.com%3Ahttp" },
+			expectedErrMsg: "not a port number",
 		},
 		"command has no leading slash": {
 			mutate:         func(req *ucandelegate.Request) { req.Commands = []string{"msg/send"} },
